@@ -28,4 +28,4 @@ cat pictures from [Cataas](cataas.com). General command functionality is defined
 
 ## Test via Command Line
 
-`php artisan test`
+`php artisan test --testsuite=Feature`
