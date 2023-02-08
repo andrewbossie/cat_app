@@ -14,7 +14,7 @@ cat pictures from [Cataas](cataas.com). All business logic / network calls have 
 
 `guzzlehttp/guzzle: ^7.5`
 
-## Run
+## Run via Command Line
 
 `php artisan cat:get {dir} {lim} {tags?}`
 
@@ -26,6 +26,6 @@ cat pictures from [Cataas](cataas.com). All business logic / network calls have 
 
 `tags` - OPTIONAL comma delim filtering
 
-## Test
+## Test via Command Line
 
 `php artisan test`
