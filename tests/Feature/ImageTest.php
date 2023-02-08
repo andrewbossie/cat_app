@@ -17,14 +17,14 @@ class ImageTest extends TestCase
      *
      * @return void
      */
-    public function imageFeatureTest()
+    public function test_imageFeature()
     {
         $dir = "test_dir";
         $limit = 1;
         $tags = "cute,fluffy";
 
-        Http::mock();
-        Storage::mock();
+        // Http::mock();
+        // Storage::mock();
         $cats = ImageService::getImages(GetCat::BASE_URL . "/api/cats",
                                         $limit,
                                         $tags
@@ -40,6 +40,7 @@ class ImageTest extends TestCase
 
             // Store
             ImageService::storeImage($dir, $cat);
+            Storage::assertExists($dir . "/" . $cat['filename']);
         }
     }
 }
