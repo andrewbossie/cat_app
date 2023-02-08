@@ -21,7 +21,9 @@ cat pictures from [Cataas](cataas.com). All business logic / network calls have 
 ## Params
 
 `dir` - Output Directory
+
 `lim` - API return limit
+
 `tags` - OPTIONAL comma delim filtering
 
 ## Test
