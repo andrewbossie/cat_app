@@ -89,7 +89,6 @@ class ImageService
 
 		$this->verifyStorage($dir);
 
-		// fopen(public_path() . $dir . "/" . $image['filename'], "w");
 		file_put_contents(public_path() . "/" . $dir . "/" . $image['filename'], $image['encoded']);
 
 		// Storage::put($dir . "/" . $image['filename'], $image['encoded']);
